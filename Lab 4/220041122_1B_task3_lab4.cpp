@@ -14,9 +14,7 @@ private:
     static int total;
     static float totTax;
 
-
 public:
-
     BankAccount(string accNo, string holderName, string accType, float balance, float minBalance)
         : Num(accNo), Name(holderName), AccType(accType), CurrBalance(balance), MinBalance(minBalance) {
         total++;
@@ -48,7 +46,7 @@ public:
             cout << "Deposited " << amount << ". New Balance: " << CurrBalance << endl;
         }
         else {
-            cout << "Invalid amount" << endl;
+            cout << "Invalid amount deposited" << endl;
         }
     }
 
@@ -63,17 +61,12 @@ public:
     }
 
     void giveInterest(float Rate = 3.0) {
-
         float interest = (CurrBalance * Rate) / 100;
         float srcTax = interest * 0.10;
         float netInterest = interest - srcTax;
 
-
         totTax += srcTax;
         deposit(netInterest);
-
-        //cout << "Interest: " << interest << ", Source Tax: " << srcTax << ", Net Interest: " << netInterest << endl;
-        //cout << "New Balance: " << CurrBalance << endl;
     }
 
     ~BankAccount() {
@@ -81,35 +74,35 @@ public:
         active--;
     }
 
-    static int getTotAcc(){
+    static int getTotAcc() {
         return total;
     }
 
-    static int getActiveAcc(){
+    static int getActiveAcc() {
         return active;
     }
 
-    static float getTax(){
+    static float getTax() {
         return totTax;
     }
 
-    float getBalance(){
+    float getBalance() const {
         return CurrBalance;
     }
 
-    string getHolderName(){
+    string getHolderName() const {
         return Name;
     }
-
-
-
 };
 
+int BankAccount::active = 0;
+int BankAccount::total = 0;
+float BankAccount::totTax = 0.0;
 
 void display_stat() {
     cout << "Total Bank Account created: " << BankAccount::getTotAcc() << endl;
-    cout << "Total Bank Account present: " << BankAccount:: getActiveAcc()<< endl;
-    cout << "Total source tax collected: " << BankAccount:: getTax()<< endl;
+    cout << "Total Bank Account present: " << BankAccount::getActiveAcc() << endl;
+    cout << "Total source tax collected: " << BankAccount::getTax() << endl;
 }
 
 BankAccount Larger(const BankAccount& A, const BankAccount& B) {
@@ -137,4 +130,3 @@ int main() {
 
     return 0;
 }
-
