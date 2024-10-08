@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1727845429 source:/home/rahatut/Coding_Academic/220041122_CSE4302/220041122_Task2_Lab5_1B/main.cpp
+	<iostream>
+	"employee.h"
+
+1727845429 /home/rahatut/Coding_Academic/220041122_CSE4302/220041122_Task2_Lab5_1B/employee.h
+	<string>
+	<iostream>
+
+1727845459 source:/home/rahatut/Coding_Academic/220041122_CSE4302/220041122_Task2_Lab5_1B/employee.cpp
+	"employee.h"
+

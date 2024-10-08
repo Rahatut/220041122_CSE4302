@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1728396304 source:/home/rahatut/Coding_Academic/220041122_CSE4302/220041122_Task3_Lab6_1B/main.cpp
+	"temperature.h"
+
+1728393983 /home/rahatut/Coding_Academic/220041122_CSE4302/220041122_Task3_Lab6_1B/temperature.h
+	<iostream>
+
+1728396573 source:/home/rahatut/Coding_Academic/220041122_CSE4302/220041122_Task3_Lab6_1B/temperature.cpp
+	<iostream>
+	"temperature.h"
+

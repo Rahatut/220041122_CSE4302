@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1728270905 source:/home/rahatut/Coding_Academic/220041122_CSE4302/220041122_Task1_Lab6_1B/main.cpp
+	<iostream>
+	"counter.h"
+
+1728269295 /home/rahatut/Coding_Academic/220041122_CSE4302/220041122_Task1_Lab6_1B/counter.h
+	<iostream>
+
+1728270778 source:/home/rahatut/Coding_Academic/220041122_CSE4302/220041122_Task1_Lab6_1B/counter.cpp
+	<iostream>
+	"counter.h"
+

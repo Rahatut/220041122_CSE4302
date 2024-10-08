@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1728271945 source:/home/rahatut/Coding_Academic/220041122_CSE4302/220041122_Task2_lab6_1B/coordinates.cpp
+	<iostream>
+	<cmath>
+	<cstdlib>
+	"coordinates.h"
+
+1728271993 /home/rahatut/Coding_Academic/220041122_CSE4302/220041122_Task2_lab6_1B/coordinates.h
+
+1728273270 source:/home/rahatut/Coding_Academic/220041122_CSE4302/220041122_Task2_lab6_1B/main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<algorithm>
+	"coordinates.h"
+
